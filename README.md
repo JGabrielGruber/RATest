@@ -9,7 +9,12 @@ REST API Test
 * Python-pip
 
 ### Installation
-On your terminal:
+On your terminal, inside the project root folder:
+
+- Change your source:
+```
+$ source bin/activate
+```
 - Clone the repository:
 ```
 $ git clone https://github.com/JGabrielGruber/RATest.git
