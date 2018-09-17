@@ -11,19 +11,19 @@ REST API Test
 ### Installation
 On your terminal:
 
-- Clone the repository:
+1. Clone the repository:
 ```
 $ git clone https://github.com/JGabrielGruber/RATest.git
 ```
-- Go to the project folder:
+2. Go to the project folder:
 ```
 $ cd RATest
 ```
-- Change your source:
+3. Change your source:
 ```
 $ source bin/activate
 ```
-- Inside the repository, run:
+4. Inside the repository, run:
 ```
 $ pip install -r package.lock 
 ```
