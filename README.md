@@ -22,7 +22,7 @@ $ virtualenv RATest/
 ```
 2. Go to the project folder:
 ```
-$ cd RATest
+$ cd RATest/
 ```
 3. Change your source:
 ```
@@ -31,6 +31,10 @@ $ source bin/activate
 4. Inside the repository, run:
 ```
 $ pip install -r package.lock 
+```
+5. Migrate the project:
+```
+$ python manage.py migrate 
 ```
 
 ### Usage
