@@ -28,7 +28,7 @@ $ cd RATest/
 ```
 $ source bin/activate
 ```
-4. Inside the repository, run:
+4. Install the necessary packages:
 ```
 $ pip install -r package.lock 
 ```
