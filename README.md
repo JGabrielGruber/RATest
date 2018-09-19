@@ -5,8 +5,9 @@ REST API Test
 
 ### Dependencies
 
-* Python 3.7
-* Python-pip
+* python3
+* python-virtualenv
+* python-pip
 
 ### Installation
 On your terminal:
@@ -14,6 +15,10 @@ On your terminal:
 1. Clone the repository:
 ```
 $ git clone https://github.com/JGabrielGruber/RATest.git
+```
+2. Create a VirtualEnv:
+```
+$ virtualenv RATest/
 ```
 2. Go to the project folder:
 ```
