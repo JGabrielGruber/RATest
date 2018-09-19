@@ -30,16 +30,16 @@ $ source bin/activate
 ```
 4. Install the necessary packages:
 ```
-$ pip install -r package.lock 
+$ pip install -r package.lock
 ```
 5. Migrate the project:
 ```
-$ python manage.py migrate 
+$ python src/manage.py migrate
 ```
 
 ### Usage
 
 To start the server, run:
 ```
-$ python manage.py runserver
+$ python src/manage.py runserver
 ```
