@@ -20,27 +20,27 @@ $ git clone https://github.com/JGabrielGruber/RATest.git
 ```
 $ virtualenv RATest/
 ```
-2. Go to the project folder:
+3. Go to the project folder:
 ```
 $ cd RATest/
 ```
-3. Change your source:
+4. Change your source:
 ```
 $ source bin/activate
 ```
-4. Install the necessary packages:
+5. Install the necessary packages:
 ```
 $ pip install -r package.lock
 ```
-5. Migrate the project:
+6. Migrate the project:
 ```
 $ python src/manage.py migrate
 ```
-6. Create the static_cdn folder:
+7. Create the static_cdn folder:
 ```
 $ mkdir static_cdn/
 ```
-7. Collect the static files:
+8. Collect the static files:
 ```
 $ python src/manage.py collectstatic
 ```
