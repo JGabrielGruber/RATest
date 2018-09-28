@@ -36,7 +36,14 @@ $ pip install -r package.lock
 ```
 $ python src/manage.py migrate
 ```
-
+6. Create the static_cdn folder:
+```
+$ mkdir static_cdn/
+```
+7. Collect the static files:
+```
+$ python src/manage.py collectstatic
+```
 ### Usage
 
 To start the server, run:
