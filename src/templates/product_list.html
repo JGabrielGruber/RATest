@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{title}} it's working!!</h1>
+  {% for object in object_list %}
+    <a href="{{ object.get_absolute_url }}">{{ object.name }}</a><br/>
+    {{ object.description }}<br />
+    {{ object.price }}<br />
+  {% endfor %}
+{% endblock content %}
