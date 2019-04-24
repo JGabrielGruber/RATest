@@ -50,6 +50,7 @@ def bovino_create(request):
 def bovino_detail(request, identificacao=None):
 	instance	= get_object_or_404(Bovino, identificacao=identificacao)
 	query_set	= Bovino.objects.all()
+	print(instance.observacao)
 	if instance.filho:
 		filhos	= get_object_or_404(Filhos, id=instance.filho.id)
 		context		= {

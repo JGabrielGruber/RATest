@@ -13,6 +13,7 @@ class Bovino(models.Model):
 		), max_length=10, default='Cria')
 	peso			= models.TextField("Peso em Kg e sua Data", blank=True, null=True)
 	medicamento		= models.TextField("Medicamento e sua Data de aplicação", blank=True, null=True)
+	observacao		= models.TextField("Observações e sua Data", blank=True, null=True)
 	estado			= models.CharField("Estado", choices=(
 			('Possui', 'Possui'),
 			('Vendido', 'Vendido'),

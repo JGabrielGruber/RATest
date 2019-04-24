@@ -28,7 +28,7 @@
 		<script type="text/javascript">
 			let lista_bovino	= JSON.parse($('#peso').val())
 
-			trHTML = '';
+			var trHTML = '';
 
 			var peso = new Array(),
 					data = new Array();
@@ -98,7 +98,6 @@
 			});
 			let total	= 0;
 			trHTML = '';
-			console.log(media);
 			$.each(media, function (i, item) {
 				total	+= item[2];
 				trHTML += '<tr><td>' + item[2] + '</td><td>' + item[3] + '</td></tr>';
@@ -122,16 +121,40 @@
 			</tbody>
 		</table>
 		<script type="text/javascript">
-			let lista	= JSON.parse($('#medicamento').val())
+			let lista_med	= JSON.parse($('#medicamento').val());
 
-			let trHTML = '';
+			trHTML = '';
 
-			$.each(lista, function (i, item) {
+			$.each(lista_med, function (i, item) {
 				trHTML += '<tr><td>' + item.medi + '</td><td>' + item.data + '</td></tr>';
 			});
 
 			$('#medicamento_table tbody').remove();
 			$('#medicamento_table').append(trHTML);
+		</script>
+		<h4><br />Observação:</h4>
+		<label class="control-label" for="observacao_table">Observações</label>
+		<input type="text" id="observacao" name="observacao" value='{{ object.observacao }}' hidden="true">
+		<table  id="observacao_table" class="table">
+			<thead>
+				<tr>
+					<th>Observação</th>
+					<th>Data</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<script type="text/javascript">
+			let lista_obs	= JSON.parse($('#observacao').val());
+			trHTML = '';
+
+			$.each(lista_obs, function (i, item) {
+				trHTML += '<tr><td><textarea cols="40" rows="3" disabled>' + item.obs + '</textarea></td><td>' + item.data + '</td></tr>';
+			});
+
+			$('#observacao_table tbody').remove();
+			$('#observacao_table').append(trHTML);
 		</script>
 		<h4>Data de Nascimento:</h4>
 		<p>{{ object.nascimento }}<br /></p>

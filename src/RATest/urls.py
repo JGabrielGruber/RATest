@@ -26,5 +26,6 @@ from animais import urls
 urlpatterns = [
 	path('favicon.ico',RedirectView.as_view(url= 'static/img/favicon.ico')),
 	path('admin/', admin.site.urls),
+	path('',RedirectView.as_view(url= 'animais/bovinos/')),
 	path('animais/', include(urls, namespace='animais'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
