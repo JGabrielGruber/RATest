@@ -26,6 +26,7 @@ class BovinoForm(forms.ModelForm):
 		fields = [
 			'identificacao',
 			'tipo',
+			'lote',
 			'peso',
 			'medicamento',
 			'observacao',
